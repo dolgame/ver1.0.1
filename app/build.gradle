@@ -1,0 +1,26 @@
+
+plugins {
+    id 'application'
+    id 'eclipse'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'org.mongodb:mongodb-driver-core:4.9.1'
+    implementation 'org.mongodb:mongodb-jdbc:2.0.2'
+    implementation 'com.google.guava:guava:31.1-jre'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+application {
+    mainClass = 'dolgame.App'
+}
