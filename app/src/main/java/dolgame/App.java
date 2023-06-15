@@ -4,11 +4,11 @@
 package dolgame;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
+    public static void getGreeting() {
+        System.out.println("asdsacx");
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    	getGreeting();
     }
 }
