@@ -14,7 +14,7 @@ public class Player{
         //게임 승리 시, 졌을 시 다르게 출력 요청
     }
 
-    int addMyMaxCost(){ //cost=1로 시작, 10이 될때까지 턴 1회당 1씩 증가
+    int addMyMaxCost(){ //cost=1로 시작, cost=10이 될때까지 턴 1회당 1씩 증가
         if(turn.totalTurn <= 20){
             if(turn.totalTurn % 2 == 0){
                 cost++;
@@ -33,10 +33,4 @@ public class Player{
             System.out.println("not enough cost");
         }
     }
-
-    public static void main(String[] args) {
-
-    }
-
-
 }
