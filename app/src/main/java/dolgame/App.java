@@ -3,11 +3,16 @@
  */
 package dolgame;
 
+import org.checkerframework.checker.units.qual.C;
+
 public class App {
     public static void getGreeting() {
-        System.out.println("asdsacx");
+        System.out.println("hello");
     }
 
     public static void main(String[] args) {
-	}
+        getGreeting();
+
+
+    }
 }
