@@ -12,6 +12,7 @@ public class DBConnect {
         try {
             Class.forName(driver);
             connection = DriverManager.getConnection(url, userId, userPassword);
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             System.out.println("DB 로딩 실패");
@@ -19,5 +20,6 @@ public class DBConnect {
             e.printStackTrace();
             System.out.println("DB 연결 실패");
         }
+        System.out.println("성공");
     }
 }
