@@ -1,37 +1,27 @@
 package dolgame;
 
-import com.mongodb.*;
-import com.mongodb.client.MongoClient;
-import com.mongodb.client.MongoClients;
-import com.mongodb.client.MongoDatabase;
-import org.bson.Document;
+import java.sql.*;
 
 public class DBConnect {
-    public static void main(String[] args) {
+	public static Connection connection;
+	private static PreparedStatement preparedStatement;
+	public static ResultSet resultSet;
 
-
-        String connectionString = "mongodb+srv://dolgame:LnRt6UUdZt84PimG@dolgamedb.aj7mszd.mongodb.net/?retryWrites=true&w=majority";
-
-        ServerApi serverApi = ServerApi.builder()
-                .version(ServerApiVersion.V1)
-                .build();
-
-        MongoClientSettings settings = MongoClientSettings.builder()
-                .applyConnectionString(new ConnectionString(connectionString))
-                .serverApi(serverApi)
-                .build();
-
-        // Create a new client and connect to the server
-        try (MongoClient mongoClient = MongoClients.create(settings)) {
-            try {
-                // Send a ping to confirm a successful connection
-                MongoDatabase database = mongoClient.getDatabase("admin");
-                database.runCommand(new Document("ping", 1));
-                System.out.println("Pinged your deployment. You successfully connected to MongoDB!");
-            } catch (MongoException e) {
-                e.printStackTrace();
-            }
-        }
-        }
-
-    }
+	public static void dbChecking() {
+		String driver = "com.mysql.cj.jdbc.Driver";
+		String url = "jdbc:mysql://localhost:3306/dolgameDB";
+		String userId = "root";
+		String userPassword = "1234";
+		try {
+			Class.forName(driver);
+			connection = DriverManager.getConnection(url, userId, userPassword);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+			System.out.println("DB 로딩 실패");
+		} catch (SQLException e) {
+			e.printStackTrace();
+			System.out.println("DB 연결 실패");
+		}
+		System.out.println("ok");
+	}
+}
