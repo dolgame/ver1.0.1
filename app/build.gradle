@@ -13,6 +13,7 @@ dependencies {
     implementation 'org.mongodb:mongodb-driver-core:4.9.1'
     implementation 'org.mongodb:mongodb-jdbc:2.0.2'
     implementation 'com.google.guava:guava:31.1-jre'
+    implementation 'mysql:mysql-connector-java:8.0.28'
 }
 
 java {
