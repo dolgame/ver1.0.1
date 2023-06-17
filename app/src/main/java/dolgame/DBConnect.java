@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class DBConnect {
 	public static Connection connection;
-	private static PreparedStatement preparedStatement;
+	public static PreparedStatement preparedStatement;
 	public static ResultSet resultSet;
 
 	public static void dbChecking() {
@@ -22,6 +22,6 @@ public class DBConnect {
 			e.printStackTrace();
 			System.out.println("DB 연결 실패");
 		}
-		System.out.println("ok");
+		System.out.println("DB 연결 성공"); //테스트용 코드
 	}
 }

@@ -3,11 +3,11 @@ package dolgame;
 public class Field {
 /*
     카드 클래스 참조 변수 -> Player player = new Player
-    플레이어 클래스 참조 변수 -> Card card = new Card
-    플레이어 필드 카드 배열 -> Card[] myFieldCard = new Card[13]
-        ArrayList<Card> myFieldCard = new ArrayList<Card>();
-    컴퓨터 필드 카드 배열 -> Card[] computerFieldCard = new Card[13]
-        ArrayList<Card> computerFieldCard = new ArrayList<Card>();
+    플레이어 클래스 참조 변수 -> dolgame.Card card = new dolgame.Card
+    플레이어 필드 카드 배열 -> dolgame.Card[] myFieldCard = new dolgame.Card[13]
+        ArrayList<dolgame.Card> myFieldCard = new ArrayList<dolgame.Card>();
+    컴퓨터 필드 카드 배열 -> dolgame.Card[] computerFieldCard = new dolgame.Card[13]
+        ArrayList<dolgame.Card> computerFieldCard = new ArrayList<dolgame.Card>();
 
     1. 상대 카드(플레이어) 공격 -> attack()
         //공격 시 피해
@@ -24,7 +24,7 @@ public class Field {
             }
         }
     2. 카드 죽음 -> deleteCard()
-        deleteCard(Card card){
+        deleteCard(dolgame.Card card){
             //프론트에 신호를 줘야함?
             System.out.println(card.name + "가 죽었습니다.");
             return card.name;
