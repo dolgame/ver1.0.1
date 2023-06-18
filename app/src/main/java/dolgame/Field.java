@@ -74,7 +74,7 @@ public class Field {
 
             if (computerCardsArray[i][1].equals(computerSelectCardName)) {
                 computerSelectedCardIndex = i;
-            }x
+            }
         }
 
         int playerSelectedCardHealth = Integer.parseInt(playerCardsArray[playerSelectedCardIndex][2]);
