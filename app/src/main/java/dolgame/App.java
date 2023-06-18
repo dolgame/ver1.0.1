@@ -5,6 +5,8 @@ package dolgame;
 
 import java.sql.Connection;
 
+import static dolgame.Card.getCardsFromDB;
+
 public class App {
     public static void getGreeting() {
         System.out.println("hello");
@@ -14,5 +16,36 @@ public class App {
         DBConnect.dbChecking();
         Connection connection = DBConnect.connection;
         getGreeting();
+        getCardsFromDB();
+
+
+//        CardTest c1 = new CardTest(1);
+//        System.out.println(c1.getId());
+//        System.out.println(c1.getName());
+//        System.out.println(c1.getHp());
+//        System.out.println(c1.getAtk());
+//        System.out.println(c1.getCost());
+//        System.out.println(c1.getDef());
+//        System.out.println(c1.getImpact());
+
+        Player p1 = new Player();
+//        p1.costCompare(c1);
+
+
+        DBConnect.cardCount();
+        System.out.println(DBConnect.cc);
+
+
+        for(int i = 1; i <=DBConnect.cc; i++){
+            CardTest ca = new CardTest(i);
+            p1.getCard(ca);
+        }
+
+        for (int i = 0; i < DBConnect.cc; i++) {
+            System.out.println(p1.cardsInHand.get(i).name);
+        }
+
+
+
     }
 }

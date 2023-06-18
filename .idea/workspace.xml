@@ -7,9 +7,9 @@
     <list default="true" id="c802797a-6fc2-4a82-a5b4-ba2f2d0acaa3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/dolgame/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dolgame/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/dolgame/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dolgame/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/dolgame/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dolgame/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/dolgame/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dolgame/DBConnect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/dolgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dolgame/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/dolgame/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dolgame/Turn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.Card">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dolgame.App" />
       <module name="dolgame.app.main" />
@@ -120,13 +120,14 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.Card" />
         <item itemvalue="Gradle.ver1.0.1 [dependencies]" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -163,5 +164,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dolgame$App.ic" NAME="App Coverage Results" MODIFIED="1687078505092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dolgame.*</FILTER>
+    </SUITE>
   </component>
 </project>
