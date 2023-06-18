@@ -14,7 +14,15 @@ dependencies {
     implementation 'org.mongodb:mongodb-driver-core:4.4.5'
     implementation 'org.mongodb:mongodb-jdbc:2.0.2'
     implementation 'com.google.guava:guava:31.1-jre'
-    implementation 'mysql:mysql-connector-java:8.0.28'
+    implementation 'org.slf4j:slf4j-log4j12:1.7.36'  // 23.06.15(15:50분) slf4j 의존성 추가
+
+    // MongoDB Java Driver
+    implementation 'org.mongodb:mongodb-driver-sync:4.4.5'
+
+    // Log4j 설정
+//    implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.14.1'
+    implementation 'org.apache.logging.log4j:log4j-api:2.14.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.14.1'  // 23.06.15(17:47분) log4j 의존성추가
 }
 
 java {

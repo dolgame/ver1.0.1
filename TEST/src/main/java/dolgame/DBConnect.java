@@ -1,7 +1,10 @@
 package dolgame;
 
-public class App {
+
+public class DBConnect {
     public static void main(String[] args) {
-      
+
     }
-}
+        }
+
+
