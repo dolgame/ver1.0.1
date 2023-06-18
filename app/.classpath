@@ -48,6 +48,11 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="C:/Users/ish79/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.7/f887f95694cd20d51a062446b6e3d09dd02d98ff/slf4j-api-2.0.7-sources.jar" kind="lib" path="C:/Users/ish79/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.7/41eb7184ea9d556f23e18b5cb99cad1f8581fc00/slf4j-api-2.0.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="C:/Users/ish79/.gradle/caches/modules-2/files-2.1/org.mongodb/bson/4.9.1/6f99dc06291e9f20b462ce438b4b4feaa028a0c1/bson-4.9.1-sources.jar" kind="lib" path="C:/Users/ish79/.gradle/caches/modules-2/files-2.1/org.mongodb/bson/4.9.1/49ee664d02bd6ee138e677f1113934c24e7b42c7/bson-4.9.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
