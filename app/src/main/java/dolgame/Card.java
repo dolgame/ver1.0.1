@@ -11,7 +11,7 @@ public class Card extends DBConnect{
         System.out.println(Arrays.deepToString(getCardsFromDB()));
     }*/
 
-    private static String[][] getCardsFromDB(){
+    public static String[][] getCardsFromDB(){
         String[][] cardsArray = new String[9][7];
         String sql = "select * from cards";
 

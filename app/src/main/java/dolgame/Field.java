@@ -26,7 +26,7 @@ public class Field {
     2. 카드 죽음 -> deleteCard()
         deleteCard(dolgame.Card card){
             //프론트에 신호를 줘야함?
-            System.out.println(card.name + "가 죽었습니다.");
+            System.out.println(5card.name + "가 죽었습니다.");
             return card.name;
         }
     3. 상대 카드는 조종 불가능하게 구현 -> //프론트에서 구현?

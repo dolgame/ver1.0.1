@@ -3,13 +3,16 @@
  */
 package dolgame;
 
+import java.sql.Connection;
+
 public class App {
     public static void getGreeting() {
         System.out.println("hello");
     }
 
     public static void main(String[] args) {
+        DBConnect.dbChecking();
+        Connection connection = DBConnect.connection;
         getGreeting();
-
     }
 }
