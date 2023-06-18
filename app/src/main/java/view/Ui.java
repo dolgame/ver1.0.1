@@ -107,7 +107,7 @@ public class Ui extends JPanel {
         JPanel centerNorth = new JPanel();
         centerNorth.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 
-        cfieldCard1 = createButton("c\n파도망령\n8\n5\n8\n0");
+        cfieldCard1 = createButton("c\n파도 망령\n8\n5\n8\n0");
         //fCard1.setIcon(new ImageIcon(getClass().getResource("/card1.png")));
         centerNorth.add(cfieldCard1);
 
@@ -187,17 +187,19 @@ public class Ui extends JPanel {
         JButton button = new JButton(text);
         button.setPreferredSize(new Dimension(97, 150));
         button.setMaximumSize(new Dimension(97, 150));
-        button.addActionListener(new BtnListenr());
+        //button.addActionListener(new BtnListenr());
+        button.addActionListener((e) ->{
+            field.attack(button.getText());
+        });
         return button;
     }
 
-    class BtnListenr implements ActionListener {
+    /*class BtnListenr implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
             // 버튼 클릭시
-            System.out.println("test");
-            field.attck(pfieldCard1.getText());
+            field.attack();
         }
-    }
+    }*/
 }

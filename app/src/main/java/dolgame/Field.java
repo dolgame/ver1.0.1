@@ -37,9 +37,9 @@ public class Field {
     */
 
     //카드 덱
-    private String[][] CardsArray = Card.getCardsFromDB();
-    private String[][] computerCardsArray = random(CardsArray);
-    private String[][] playerCardsArray = random(CardsArray);
+    private String[][] cardsArray = Card.getCardsFromDB();
+    private String[][] computerCardsArray = random(cardsArray);
+    private String[][] playerCardsArray = random(cardsArray);
 
     private final String[][] setCardArray = new String[2][6];
     String playerSelectCardName;
@@ -51,24 +51,23 @@ public class Field {
     }*/
 
     public String[][] random(String[][] array) {
+        String[][] shuffledArray = array.clone();
 
-        int cardCount = array.length;
+        int cardCount = shuffledArray.length;
         for (int i = 0; i < cardCount; i++) {
             int r = i + (int) (Math.random() * (cardCount - i));
-            String[] tmp = array[r];
-            array[r] = array[i];
-            array[i] = tmp;
+            String[] tmp = shuffledArray[r];
+            shuffledArray[r] = shuffledArray[i];
+            shuffledArray[i] = tmp;
         }
 
-        return array;
+        return shuffledArray;
     }
 
-    public String[] attck(String cardText) {
-
-        System.out.println("ok");
+    public void attack(String cardText) {
 
         String[][] cardArray;
-        if (selectCard(cardText) == null) return null;
+        if (selectCard(cardText) == null) return;
         else cardArray = selectCard(cardText);
 
         System.out.println("player 선택 카드: " + Arrays.toString(setCardArray[0]));
@@ -77,11 +76,12 @@ public class Field {
         playerSelectCardName = cardArray[0][1];
         computerSelectCardName = cardArray[1][1];
         if (playerSelectCardName == null || computerSelectCardName == null) {
-            return null;
+            return;
         }
         int computerSelectedCardIndex = 0;
         int playerSelectedCardIndex = 0;
 
+//        String[] finalArray = new String[2];
 
         //본인 카드 배열에서 선택된 카드 찾기
         for (int i = 0; i < computerCardsArray.length; i++) {
@@ -107,6 +107,7 @@ public class Field {
         if (computerSelectedCardHealth - playerSelectedCardAtk <= 0) {
             computerRemoveCard(computerSelectedCardIndex);
             System.out.println(computerSelectCardName + "가 사망하였습니다.");
+//            finalArray[1] = null;
         }
 
         //공격 카드의 남은 피가 0 이하일 때
@@ -114,22 +115,40 @@ public class Field {
             //배열에서 없애고 빈칸 채우기
             playerRemoveCard(playerSelectedCardIndex);
             System.out.println(playerSelectCardName + "가 사망하였습니다.");
+//            finalArray[0] = null;
         }
 
         //방어 카드의 남은 피가 1 이상일 때
         if (computerSelectedCardHealth - playerSelectedCardAtk > 0) {
             computerCardsArray[computerSelectedCardIndex][2] = String.valueOf(computerSelectedCardHealth - playerSelectedCardAtk);
             System.out.println(computerSelectCardName + "의 남은 체력: " + (computerSelectedCardHealth - playerSelectedCardAtk));
+
+            /*for (int i = 0; i < computerCardsArray[computerSelectedCardIndex].length; i++) {
+                if (i != computerCardsArray[computerSelectedCardIndex].length - 1) {
+                    finalArray[1] += computerCardsArray[computerSelectedCardIndex][i] + "\n";
+                } else {
+                    finalArray[1] += computerCardsArray[computerSelectedCardIndex][i];
+                }
+            }*/
         }
 
         //공격 카드의 남은 피가 1 이상일 때
         if (playerSelectedCardHealth - computerSelectedCardAtk > 0) {
             playerCardsArray[playerSelectedCardIndex][2] = String.valueOf(playerSelectedCardHealth - computerSelectedCardAtk);
             System.out.println(playerSelectCardName + "의 남은 체력: " + (playerSelectedCardHealth - computerSelectedCardAtk));
+
+            /*for (int i = 0; i < computerCardsArray[playerSelectedCardIndex].length; i++) {
+                if (i != playerCardsArray[playerSelectedCardIndex].length - 1) {
+                    finalArray[1] += playerCardsArray[playerSelectedCardIndex][i] + "\n";
+                } else {
+                    finalArray[1] += playerCardsArray[playerSelectedCardIndex][i];
+                }
+            }*/
         }
 
         init(setCardArray);
-        return null;
+        System.out.println(Arrays.deepToString(playerCardsArray));
+        System.out.println(Arrays.deepToString(computerCardsArray));
     }
 
     private void init(String[][] setCardArray) {

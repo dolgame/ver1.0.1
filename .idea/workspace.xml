@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c802797a-6fc2-4a82-a5b4-ba2f2d0acaa3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/out/production/classes/dolgame/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/dolgame/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/out/production/classes/dolgame/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/dolgame/Field.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/dolgame/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dolgame/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/out/production/classes/view/Ui$BtnListenr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/out/production/classes/view/Ui.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/view/Ui.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/dolgame/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dolgame/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/view/Ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/view/Ui.java" afterDir="false" />
     </list>
