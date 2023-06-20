@@ -13,7 +13,7 @@ public class Field {
     private final String[] finalArray = new String[2];
 
 
-    private final String[][] setCardArray = new String[2][6];
+    public static final String[][] setCardArray = new String[2][6];
     String playerSelectCardName;
     String computerSelectCardName;
 
