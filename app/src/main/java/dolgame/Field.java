@@ -41,7 +41,7 @@ public class Field {
     private String[][] computerCardsArray = random(cardsArray);
     private String[][] playerCardsArray = random(cardsArray);
 
-    private final String[][] setCardArray = new String[2][6];
+    public static final String[][] setCardArray = new String[2][6];
     String playerSelectCardName;
     String computerSelectCardName;
 
@@ -160,7 +160,7 @@ public class Field {
         computerSelectCardName = null;
     }
 
-    public String[][] selectCard(String cardText) {
+    public static String[][] selectCard(String cardText) {
 
         if (cardText.split("\n")[0].equals("p")) {
             for (int i = 0; i < cardText.split("\n").length; i++) {

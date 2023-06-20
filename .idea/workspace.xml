@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c802797a-6fc2-4a82-a5b4-ba2f2d0acaa3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d02d7847-6197-4c0d-a8c2-eea29ec0b749.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d02d7847-6197-4c0d-a8c2-eea29ec0b749.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/out/production/classes/dolgame/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/dolgame/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/out/production/classes/dolgame/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/dolgame/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/out/production/classes/dolgame/DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/dolgame/DBConnect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/out/production/classes/dolgame/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/dolgame/Field.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/out/production/classes/view/Ui$BtnListenr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/out/production/classes/dolgame/Turn$GamePlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/out/production/classes/dolgame/Turn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/out/production/classes/view/MyFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/view/MyFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/out/production/classes/view/Ui.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/view/Ui.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/dolgame/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dolgame/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/view/Ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/view/Ui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/dolgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dolgame/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/dolgame/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dolgame/Turn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +77,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jin/Desktop/Chunjae_Bootcamp/Chunjae_Class/Class_Proejct_01/CodeFile/ver1.0.1&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -83,8 +93,10 @@
 }</component>
   <component name="RunManager" selected="Application.App (1)">
     <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="dolgame.App" />
-      <module name="app.dolgame.app.main" />
+      <module name="dolgame.app.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dolgame.*" />
@@ -147,6 +159,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -172,6 +185,8 @@
       <workItem from="1686991967086" duration="117000" />
       <workItem from="1686992094957" duration="8429000" />
       <workItem from="1687075304659" duration="12481000" />
+      <workItem from="1687148957321" duration="9676000" />
+      <workItem from="1687242950308" duration="175000" />
     </task>
     <servers />
   </component>
