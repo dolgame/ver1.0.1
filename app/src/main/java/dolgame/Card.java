@@ -15,7 +15,7 @@ public class Card extends DBConnect {
     public static String[][] getCardsFromDB() {
         dbChecking();
 
-        String[][] cardsArray = new String[9][7];
+        String[][] cardsArray = new String[5][7];
         String sql = "select * from cards";
 
         try {
