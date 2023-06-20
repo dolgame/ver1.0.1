@@ -3,16 +3,19 @@ package dolgame;
 import java.sql.SQLException;
 import java.util.Arrays;
 
-public class Card extends DBConnect{
+public class Card extends DBConnect {
 
     //DB card test
-  /*  public static void main(String[] args) {
-        dbChecking();
-        System.out.println(Arrays.deepToString(getCardsFromDB()));
-    }*/
+    //public static void main(String[] args) {
+    //    dbChecking();
+    //    System.out.println(Arrays.deepToString(getCardsFromDB()));
 
-    public static String[][] getCardsFromDB(){
-        String[][] cardsArray = new String[9][7];
+    //}
+
+    public static String[][] getCardsFromDB() {
+        dbChecking();
+
+        String[][] cardsArray = new String[5][7];
         String sql = "select * from cards";
 
         try {
@@ -32,7 +35,7 @@ public class Card extends DBConnect{
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             if (resultSet != null) {
                 try {
                     resultSet.close();
